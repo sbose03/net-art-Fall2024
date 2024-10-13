@@ -1,0 +1,29 @@
+
+body {
+    background-color: #add8e6; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 45px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#theend {
+    color: #ff4500; 
+}
+
+div {
+    padding: 50px;
+    margin: 80px;
+    border: 10px solid black;
+}
