@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Online Art of Frustration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        setTimeout(() => {
+            alert("Warning: This site might make you annoyed");
+        }, 3000); 
+
+        let blankWindow;
+        let isFirstClick = true;
+
+        function handleClick(event, url) {
+            event.preventDefault(); 
+            if (isFirstClick) {
+                blankWindow = window.open('about:blank', '_blank');
+                alert("You need to click on the website again to visit it!");
+                isFirstClick = false;
+            } else {
+                if (blankWindow && !blankWindow.closed) {
+                    blankWindow.location.href = url; 
+                } else {
+                    alert("Please click again to open the site.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>The Online Art of Frustration</h1>
+        <p>Curated by Saumit Bose</p>
+    </header>
+    <main>
+        <section class="intro">
+            <p>
+                This online exhibition showcases three websites that are solely dedicated to wasting time and causing frustration. It serves as a contrast to what we expect the internet to be. We expect the internet to be clean and efficient. If we want to find something we can search it on the internet and find it in seconds. These websites subvert that expectation by being intentionally useless or annoying. The websites, ranging from endless password requirements to simulated system failures, also tap into the psychological effects of technology and the digital landscape. Companies have developed algorithms to try and keep us as engaged as long as possible, whereas these sites do the opposite of that. 
+            </p>
+        </section>
+
+        <section class="artworks">
+            <article class="artwork">
+                <h2>Password Game</h2>
+                <p><strong>Neal Agarwal</strong>, 2023</p>
+                <p>This interactive web game requires users to create a password with increasingly absurd and impossible requirements, mocking the often frustrating and arbitrary password creation rules found on various sites.</p>
+                <img src="password-game.jpg" alt="Password Game Screenshot" style="cursor: pointer;" onclick="window.open('https://neal.fun/password-game/', '_blank');">
+                <a href="https://neal.fun/password-game/" onclick="handleClick(event, 'https://neal.fun/password-game/')">Explore Password Game</a>
+            </article>
+
+            <article class="artwork">
+                <h2>The Useless Web</h2>
+                <p><strong>Tim Holman</strong>, 2012</p>
+                <p>The Useless Web directs users to a random, often pointless website, reinforcing the idea of the internet as a space filled with infinite distractions and content that serves no purpose other than to occupy time and attention.</p>
+                <img src="useless-web.jpg" alt="The Useless Web Screenshot" style="cursor: pointer;" onclick="window.open('https://theuselessweb.com/', '_blank');">
+                <a href="https://theuselessweb.com/" onclick="handleClick(event, 'https://theuselessweb.com/')">Explore The Useless Web</a>
+            </article>
+
+            <article class="artwork">
+                <h2>The Restart Page</h2>
+                <p><strong>soonintokyo</strong>, 2011</p>
+                <p>This site simulates the experience of a computer restart, complete with old loading screens and system startup sounds, triggering the anxiety associated with potential system failures and harkening back to a bygone era.</p>
+                <img src="restart-page.jpg" alt="The Restart Page Screenshot" style="cursor: pointer;" onclick="window.open('http://www.therestartpage.com/', '_blank');">
+                <a href="http://www.therestartpage.com/" onclick="handleClick(event, 'http://www.therestartpage.com/')">Explore The Restart Page</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="blink">This site is best viewed while in a calm and peaceful manner.</p>
+    </footer>
+</body>
+</html>

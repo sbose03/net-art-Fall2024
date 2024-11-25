@@ -1,0 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: lime;
+    text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+}
+
+/* Intro section styling */
+.intro {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Artworks section styling */
+.artworks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.artwork {
+    background-color: #222;
+    padding: 15px;
+    border: 3px solid lime;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.artwork h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.artwork p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.artwork a {
+    font-size: 1.1em;
+    color: cyan;
+    text-decoration: none;
+    border: 2px solid cyan;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.artwork a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Footer section styling */
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    padding: 20px;
+}
+
+/* Blinking text */
+.blink {
+    font-size: 1.5em;
+    color: magenta;
+    animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Add some retro screen effects */
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Glitch effect for the title */
+h1 {
+    position: relative;
+    animation: glitch 1.5s infinite;
+}
+
+/*@keyframes glitch {
+    0% {
+        text-shadow: 0 0 5px red, 0 0 10px blue;
+    }
+    10% {
+        text-shadow: 0 0 10px red, 0 0 20px blue;
+    }
+    20% {
+        text-shadow: 0 0 15px red, 0 0 25px blue;
+    }
+    30% {
+        text-shadow: 0 0 20px red, 0 0 30px blue;
+    }
+    40% {
+        text-shadow: 0 0 25px red, 0 0 35px blue;
+    }
+    50% {
+        text-shadow: 0 0 30px red, 0 0 40px blue;
+    }
+    60% {
+        text-shadow: 0 0 35px red, 0 0 45px blue;
+    }
+    70% {
+        text-shadow: 0 0 40px red, 0 0 50px blue;
+    }
+    80% {
+        text-shadow: 0 0 45px red, 0 0 55px blue;
+    }
+    90% {
+        text-shadow: 0 0 50px red, 0 0 60px blue;
+    }
+    100% {
+        text-shadow: 0 0 55px red, 0 0 65px blue;
+    }
+} */
