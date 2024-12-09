@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #2e6e9e;
+    text-align: center;
+    font-size: 2em;
+}
+
+.black-bg.white-text {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2e6e9e;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1d4e6d;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.nuclear-page {
+    background-image: url('nuclear.jpg');
+}
+
+.internet-page {
+    background-image: url('hack.jpg');
+}
+
+.airplane-page {
+    background-image: url('cloud.jpg');
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
